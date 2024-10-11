@@ -1,0 +1,16 @@
+create database Admissionlist;
+use Admissionlist;
+create table registration(s_no int, namee varchar(20), gender char(10), city varchar(50),sem int, marks int );
+select * from registration;
+INSERT INTO registration(s_no,namee,gender, city,sem,marks) values(001,'Reena','Female','Ahmedabad',3,78),(002,'Vijay','Male','Surat',5,45),(003,'Rahul','Male','Gandhinagar',1,35),(004,'Sanket','Male','mehsana',5,69),(005,'Chaitali','Female','Rajkot',1,20),(006,'Keyur','Male','Ahmedabad',5,86);
+select * from registration;
+select namee,gender from registration;
+select namee from registration where gender='Male';
+select  * from registration order by 'Marks' desc ;
+select distinct namee from  registration;
+select  max(Marks) from registration;
+select min(Marks) from registration;
+select avg(Marks) from registration;
+select count(s_no) from registration;
+select sum(Marks) from registration;
+select * from registration;
